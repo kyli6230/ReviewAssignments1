@@ -7,7 +7,7 @@ public class PizzaCost1 {
     public static void main(String[] args) {
         double size, total;
         int toppings;
-        double labour = 1.5, gas = 0.75;
+        final double labour = 1.5, gas = 0.75;
         
         Scanner s = new Scanner(System.in);
         //ask for pizza size and number of toppings
