@@ -15,7 +15,7 @@ public class BarChart {
         System.out.print("Enter value 3 of 4 -> ");
         value3 = s.nextInt();
         System.out.print("Enter value 4 of 4 -> ");
-        value4 = s.nextInt();
+        value4 = s.nextInt();       
     }
     
 }
