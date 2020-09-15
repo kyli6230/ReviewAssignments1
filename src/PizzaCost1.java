@@ -18,7 +18,7 @@ public class PizzaCost1 {
         //calculate total
         total = labour + gas + (0.75 * toppings) + (0.50 * size);
         //print the answer
-        System.out.println(String.format("Total cost is %.2f",total));
+        System.out.println(String.format("The total cost is %.2f",total));
     }
     
 }
