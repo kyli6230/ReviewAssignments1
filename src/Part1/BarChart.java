@@ -1,3 +1,5 @@
+package Part1;
+
 import TurtleGraphics.Pen;
 import TurtleGraphics.SketchPadWindow;
 import TurtleGraphics.StandardPen;
