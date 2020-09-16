@@ -22,10 +22,11 @@ public class BarChart {
         value3 = s.nextInt();
         System.out.print("Enter value 4 of 4 -> ");
         value4 = s.nextInt();   
-        makeBar(-150,-250,value1,Color.blue);
-        makeBar(-50,-250,value2,Color.red);
-        makeBar(50,-250,value3,Color.green);
-        makeBar(150,-250,value4,Color.yellow);
+        makeBar(-150,-225,value1,Color.blue);
+        makeBar(-50,-225,value2,Color.red);
+        makeBar(50,-225,value3,Color.green);
+        makeBar(150,-225,value4,Color.yellow);
+        makeLine();
     }
     public static void makeBar(int xloc, int yloc, int length, Color col) {
         p.up();
@@ -36,8 +37,17 @@ public class BarChart {
         p.setDirection(90);
         p.move(length);
         p.up();
-        p.move(15);
+        p.move(35);
         p.down();
         p.drawString(length + "");
+    }
+    public static void makeLine(){
+        p.up();
+        p.move(-200,-250);
+        p.down();
+        p.setColor(Color.black);
+        p.setWidth(10);
+        p.setDirection(0);
+        p.move(400);
     }
 }
