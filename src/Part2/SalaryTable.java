@@ -21,12 +21,20 @@ public class SalaryTable {
         System.out.format("%20s\n", "==========");
 
         for (int year = 1; year <= 10; year += 1) {
-            System.out.format("%5d", year);
-            System.out.format("%20s", nf.format(salary));
-            raise = (int) (0.03 * salary); //have to cast to integer
-            System.out.format("%20s", nf.format(raise));
-            salary = salary + raise;
-            System.out.format("%20s\n", nf.format(salary));
+            if (year == 1) {
+                System.out.format("%5d", year);
+                System.out.format("%20s", "-------");
+                System.out.format("%20s", nf.format(salary));
+                System.out.format("%20s\n", nf.format(salary));
+            } else {
+                System.out.format("%5d", year);
+                System.out.format("%20s", nf.format(salary));
+                raise = (int) (0.03 * salary); //have to cast to integer
+                System.out.format("%20s", nf.format(raise));
+                salary = salary + raise;
+                System.out.format("%20s\n", nf.format(salary));
+            }
+
         }
 
     }
